@@ -1,4 +1,4 @@
-module Challenge02
+module Challenge03
 open System
 
 let solution = 
