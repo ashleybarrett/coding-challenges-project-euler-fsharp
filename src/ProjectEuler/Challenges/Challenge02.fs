@@ -11,5 +11,5 @@ let solution =
         Some((ele, next), (ele, next))
     )
     |> Seq.takeWhile(fun (acc, _) -> acc < maxNumber)
-    |> Seq.filter(fun (acc, ele) -> acc % 2 = 0)
+    |> Seq.filter(fun (acc, _) -> acc % 2 = 0)
     |> Seq.sumBy fst
