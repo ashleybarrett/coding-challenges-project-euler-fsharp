@@ -7,6 +7,7 @@
     <Compile Include="Challenges/Challenge01.fs" />
     <Compile Include="Challenges/Challenge02.fs" />
     <Compile Include="Challenges/Challenge03.fs" />
+    <Compile Include="Challenges/Challenge08.fs" />
     <Compile Include="Challenges/Challenge04.fs" />
     <Compile Include="Challenges/Challenge05.fs" />
     <Compile Include="Challenges/Challenge07.fs" />
