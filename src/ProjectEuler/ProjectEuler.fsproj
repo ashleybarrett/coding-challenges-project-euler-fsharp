@@ -9,6 +9,7 @@
     <Compile Include="Challenges/Challenge03.fs" />
     <Compile Include="Challenges/Challenge04.fs" />
     <Compile Include="Challenges/Challenge05.fs" />
+    <Compile Include="Challenges/Challenge06.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
