@@ -1,7 +1,5 @@
 module Challenge08
 
-open System
-
 let solution = 
     //https://projecteuler.net/problem=8
 
