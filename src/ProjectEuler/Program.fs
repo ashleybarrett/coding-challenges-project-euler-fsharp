@@ -1,6 +1,6 @@
 ﻿[<EntryPoint>]
 let main argv =
 
-    Challenge09.solution |> ignore
+    Challenge11.solution |> ignore
 
     0

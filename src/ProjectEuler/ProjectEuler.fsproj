@@ -14,6 +14,7 @@
     <Compile Include="Challenges/Challenge08.fs" />
     <Compile Include="Challenges/Challenge09.fs" />
     <Compile Include="Challenges/Challenge10.fs" />
+    <Compile Include="Challenges/Challenge11.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
