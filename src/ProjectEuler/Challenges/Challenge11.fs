@@ -59,7 +59,7 @@ let solution =
             |> Seq.filter(fun s -> s.IsSome)
             |> Seq.map(fun s -> s.Value)
         )
-        |> Seq.filter(fun x -> x |> Seq.length = 4)
+        |> Seq.filter(fun x -> x |> Seq.length = toTake)
         |> reduceResultsToMax
 
     let leftToRight = getLargestProductFromGridRows grid
