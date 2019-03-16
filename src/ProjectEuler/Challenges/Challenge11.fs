@@ -56,8 +56,8 @@ let solution =
                 let index = x + (s * 21)
                 grid |> Seq.tryItem(index)
             )
-            |> Seq.filter(fun z -> z.IsSome)
-            |> Seq.map(fun z -> z.Value)
+            |> Seq.filter(fun s -> s.IsSome)
+            |> Seq.map(fun s -> s.Value)
         )
         |> Seq.filter(fun x -> x |> Seq.length = 4)
         |> reduceResultsToMax
