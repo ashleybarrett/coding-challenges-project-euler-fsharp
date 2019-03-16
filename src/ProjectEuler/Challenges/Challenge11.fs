@@ -38,11 +38,10 @@ let solution =
 
     let getLargestProductFromGridRows grid =
         grid 
-        |> Seq.map(
-            fun x -> 
-                x 
-                |> Seq.windowed toTake
-                |> Seq.map Seq.ofArray
+        |> Seq.map(fun x -> 
+            x 
+            |> Seq.windowed toTake
+            |> Seq.map Seq.ofArray
         )
         |> Seq.collect id
         |> reduceResultsToMax  
