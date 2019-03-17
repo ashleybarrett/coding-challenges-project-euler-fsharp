@@ -13,19 +13,20 @@ let solution =
 
     {1L..number}
     |> Seq.map(fun x ->
-        (x, x, 1)
-        |> Seq.unfold(fun (originalNumber, nextNumber, chainLength) -> 
+        (x, 1)
+        |> Seq.unfold(fun (number, chainLength) -> 
                 let next = 
-                        match isEven nextNumber with
-                        | true -> evenCalc nextNumber
-                        | false -> oddCalc nextNumber
+                        match isEven number with
+                        | true -> evenCalc number
+                        | false -> oddCalc number
         
-                Some((originalNumber, nextNumber, chainLength), (originalNumber, next, chainLength + 1))
+                Some((number, chainLength), (next, chainLength + 1))
         )
-        |> Seq.find(fun (_, nextNumber, _) -> nextNumber = 1L)
+        |> Seq.find(fun (number, _) -> number = 1L)
+        |> fun (_, chainLength) -> (x, chainLength)
     )
-    |> Seq.maxBy(fun (_, _, chainLength) -> chainLength)
-    |> fun (originalNumber, _, _) -> originalNumber
+    |> Seq.maxBy(fun (_, chainLength) -> chainLength)
+    |> fst
     |> int
       
     
