@@ -22,7 +22,5 @@ let solution =
     |> fst
 
 
-
-
     
         
