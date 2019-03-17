@@ -19,7 +19,7 @@ let solution =
     (0L, 1L)
     |> Seq.unfold(fun (acc, next) -> Some((acc, next), (acc + next, next + 1L)))
     |> Seq.find(fun (acc, _) -> getNumberOfDivisors acc  > greaterThanNumberOfDivisors)
-    |> (fun (acc, _) -> acc)
+    |> fst
 
 
 
