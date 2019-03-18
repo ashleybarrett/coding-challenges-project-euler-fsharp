@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/ProjectEuler/bin/Debug/netcoreapp2.1/ProjectEuler.dll",
+            "program": "${workspaceFolder}/src/ProjectEuler/bin/Debug/netcoreapp2.2/ProjectEuler.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
