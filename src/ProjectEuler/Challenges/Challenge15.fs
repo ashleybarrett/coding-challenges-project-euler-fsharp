@@ -2,21 +2,22 @@ module Challenge15
 
 let solution = 
     //https://projecteuler.net/problem=15
+    //This is a combination problem http://mathworld.wolfram.com/Combination.html
 
-    let gridSize = 2;
+    let gridSize = 20I;
 
-    let routeLength = gridSize * 2
+    let getFactorial (number: bigint) = 
+        {1I..number}
+        |> Seq.rev
+        |> Seq.reduce (*)
 
-    //R = Right D = Down
+    let nFactorial = getFactorial (gridSize * 2I)
+    let kFactorial = getFactorial gridSize
 
-    //Same number of R and Ds in a route
-
-    // 2 x 2 grid RRDD, RDRD, RDDR, DRRD, DRDR and DDRR;
-
-    0
+    nFactorial / (kFactorial * kFactorial)
       
     
 
 
     
-        
+        ß
