@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Helpers/MathHelper.fs" />
     <Compile Include="Challenges/Challenge01.fs" />
     <Compile Include="Challenges/Challenge02.fs" />
     <Compile Include="Challenges/Challenge03.fs" />
