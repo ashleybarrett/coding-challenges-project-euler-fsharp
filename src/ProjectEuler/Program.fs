@@ -1,5 +1,5 @@
 ﻿[<EntryPoint>]
-let main argv =
+let main _ =
 
     Challenge17.solution |> ignore
 

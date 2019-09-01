@@ -1,13 +1,11 @@
 module Challenge12
 
-open System
+open ProjectEuler.Helpers.Int64Math
 
 let solution = 
     //https://projecteuler.net/problem=12
 
     let greaterThanNumberOfDivisors = 500
-
-    let getSqrt number = number |> double |> Math.Sqrt |> int64
 
     let getNumberOfDivisors number = 
         let upperBound = getSqrt number
