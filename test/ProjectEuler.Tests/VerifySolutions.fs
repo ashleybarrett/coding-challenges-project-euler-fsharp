@@ -17,4 +17,16 @@ type TestClass () =
         let expected = 4613732
         let actual = Challenge02.solution
         expected.ShouldBe(actual);
+
+    [<Test>]
+    member this.VerifySolution3() =
+        let expected = 6857L
+        let actual = Challenge03.solution
+        expected.ShouldBe(actual);
+
+    [<Test>]
+    member this.VerifySolution4() =
+        let expected = 906609
+        let actual = Challenge04.solution
+        expected.ShouldBe(actual);
         
