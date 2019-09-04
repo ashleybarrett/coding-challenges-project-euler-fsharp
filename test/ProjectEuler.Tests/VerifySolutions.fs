@@ -29,4 +29,17 @@ type TestClass () =
         let expected = 906609
         let actual = Challenge04.solution
         expected.ShouldBe(actual);
+
+    [<Test>]
+    [<Ignore("Slow test")>]
+    member this.VerifySolution5() =
+        let expected = 232792560
+        let actual = Challenge05.solution
+        expected.ShouldBe(actual);
+
+    [<Test>]
+    member this.VerifySolution6() =
+        let expected = 25164150
+        let actual = Challenge06.solution
+        expected.ShouldBe(actual);
         
