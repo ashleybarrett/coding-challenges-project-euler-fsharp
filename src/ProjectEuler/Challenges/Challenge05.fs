@@ -9,7 +9,6 @@ let solution =
         {1..maxNumber}
         |> Seq.forall(fun x -> candiate % x = 0)
 
-
     Seq.initInfinite(fun x -> x + maxNumber)
     |> Seq.filter(fun x -> isMultiples maxNumber x)
     |> Seq.head

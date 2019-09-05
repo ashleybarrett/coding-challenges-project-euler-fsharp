@@ -8,10 +8,10 @@ let solution =
     let productSize = 13
        
     numbers.ToCharArray()
-    |> Array.map(fun x -> x |> string |> int64)
+    |> Array.map(string >> int64)
     |> Array.toSeq
     |> Seq.windowed productSize
-    |> Seq.map(fun x -> x |> Array.reduce (*))
+    |> Seq.map(Array.reduce (*))
     |> Seq.max
 
 
