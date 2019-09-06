@@ -70,24 +70,28 @@ type TestClass () =
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution11() =
         let expected = 1788696
         let actual = Challenge11.solution
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution12() =
         let expected = 76576500L
         let actual = Challenge12.solution
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution13() =
         let expected = 5537376230L
         let actual = Challenge13.solution
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution14() =
         let expected = 837799
         let actual = Challenge14.solution
@@ -101,12 +105,14 @@ type TestClass () =
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution16() =
         let expected = 1366
         let actual = Challenge16.solution
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
     member this.VerifySolution17() =
         let expected = 21124
         let actual = Challenge17.solution

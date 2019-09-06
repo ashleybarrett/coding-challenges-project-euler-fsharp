@@ -7,7 +7,7 @@ let solution =
 
     let nthPrime = 10001
 
-    Seq.initInfinite(fun x -> x + 2)
+    Seq.initInfinite(fun n -> n + 1)
     |> Seq.filter isPrime
     |> Seq.item nthPrime
 
