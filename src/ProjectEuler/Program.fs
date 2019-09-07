@@ -1,6 +1,6 @@
 ﻿[<EntryPoint>]
 let main _ =
 
-    Challenge18.solution |> ignore
+    Challenge20.solution |> ignore
 
     0
