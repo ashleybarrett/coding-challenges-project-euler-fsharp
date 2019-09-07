@@ -3,7 +3,7 @@ module Challenge18
 let solution = 
     //https://projecteuler.net/problem=18
 
-    let triange = @"
+    let inputTriange = @"
                                 75
                                95 64
                              17 47 82
@@ -54,7 +54,7 @@ let solution =
 
               getMaximumPathSum triange nextRowIndex nextItemIndex
 
-    let mutable triange = triangleToArray triange
+    let mutable triange = triangleToArray inputTriange
     let startingPosition = triange.Length - 2
 
     getMaximumPathSum triange startingPosition 0
