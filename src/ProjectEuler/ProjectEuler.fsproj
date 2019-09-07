@@ -22,6 +22,7 @@
     <Compile Include="Challenges/Challenge16.fs" />
     <Compile Include="Challenges/Challenge17-refactor.fs" />
     <Compile Include="Challenges/Challenge14.fs" />
+    <Compile Include="Challenges/Challenge18.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
