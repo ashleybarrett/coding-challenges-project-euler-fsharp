@@ -20,7 +20,7 @@
     <Compile Include="Challenges/Challenge13.fs" />
     <Compile Include="Challenges/Challenge15.fs" />
     <Compile Include="Challenges/Challenge16.fs" />
-    <Compile Include="Challenges/Challenge17-refactor.fs" />
+    <Compile Include="Challenges/Challenge17.fs" />
     <Compile Include="Challenges/Challenge14.fs" />
     <Compile Include="Challenges/Challenge18.fs" />
     <Compile Include="Program.fs" />
