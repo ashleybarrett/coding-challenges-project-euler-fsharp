@@ -23,6 +23,7 @@
     <Compile Include="Challenges/Challenge17.fs" />
     <Compile Include="Challenges/Challenge14.fs" />
     <Compile Include="Challenges/Challenge18.fs" />
+    <Compile Include="Challenges/Challenge19.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
