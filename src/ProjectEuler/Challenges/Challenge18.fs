@@ -21,18 +21,18 @@ let solution =
         04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
     "
 
-    let trimSplit (input:string) (seperator:char) = input.Trim().Split(seperator)
-
     let triangleToArray triange = 
-        trimSplit triange '\n'
-        |> Array.map(fun line -> 
-            let numbers = line.Trim().Split(" ")
-            numbers |> Array.map int
-        )
-    
-    let getItemValue (triange: int array array) (rowIndex: int) (itemIndex: int) = triange.[rowIndex].[itemIndex]
+      let trimSplit (input:string) (seperator:char) = input.Trim().Split(seperator)
 
+      trimSplit triange '\n'
+      |> Array.map(fun line -> 
+          let numbers = line.Trim().Split(" ")
+          numbers |> Array.map int
+      )
+    
     let rec getMaximumPathSum (triange: int array array) (rowIndex: int) (itemIndex: int) = 
+        let getItemValue (triange: int array array) (rowIndex: int) (itemIndex: int) = triange.[rowIndex].[itemIndex]
+
         let tip = getItemValue triange rowIndex itemIndex
         let left = getItemValue triange (rowIndex + 1) itemIndex
         let right = getItemValue triange (rowIndex + 1) (itemIndex + 1)
@@ -47,12 +47,12 @@ let solution =
         match atSummit with
         | true -> newTip
         | _ ->
-                let nextItemIndex = if (triange.[rowIndex].Length - 1) = itemIndex then 0 else itemIndex + 1 
-                let nextRowIndex = if nextItemIndex > 0 then rowIndex else rowIndex - 1
+              let nextItemIndex = if (triange.[rowIndex].Length - 1) = itemIndex then 0 else itemIndex + 1 
+              let nextRowIndex = if nextItemIndex > 0 then rowIndex else rowIndex - 1
 
-                triange.[rowIndex].[itemIndex] <- newTip
+              triange.[rowIndex].[itemIndex] <- newTip
 
-                getMaximumPathSum triange nextRowIndex nextItemIndex
+              getMaximumPathSum triange nextRowIndex nextItemIndex
 
     let mutable triange = triangleToArray triange
     let startingPosition = triange.Length - 2
