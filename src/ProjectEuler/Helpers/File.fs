@@ -2,4 +2,6 @@ namespace ProjectEuler.Helpers
 
 module File = 
 
-    let readFile (fileName: string) = System.IO.File.ReadAllText fileName
+    let readFileAndSplit (fileName: string) (splitter: string) = 
+        let allText = System.IO.File.ReadAllText fileName 
+        allText.Split(splitter)
