@@ -141,4 +141,10 @@ type TestClass () =
         let expected = 871198282
         let actual = Challenge22.solution
         actual.ShouldBe(expected);
+
+    [<Test>]
+    member this.VerifySolution25() =
+        let expected = 4782
+        let actual = Challenge25.solution
+        actual.ShouldBe(expected);
         
