@@ -2,7 +2,7 @@ module Challenge25
 
 let solution = 
     
-    //https://projecteuler.net/problem=22
+    //https://projecteuler.net/problem=25
 
     (1,0I,1I)
     |> Seq.unfold(fun (count, acc, ele) -> 
