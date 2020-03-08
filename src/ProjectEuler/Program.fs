@@ -1,6 +1,6 @@
 ﻿[<EntryPoint>]
 let main _ =
 
-    let result = Challenge26.solution
+    let result = Challenge30.solution
     
     0

@@ -29,7 +29,6 @@
     <Compile Include="Challenges/Challenge22.fs" />
     <Compile Include="Challenges/Challenge21.fs" />
     <Compile Include="Challenges/Challenge25.fs" />
-    <Compile Include="Challenges/Challenge26.fs" />
     <Compile Include="Program.fs" />
     <Content Include="**/*.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
