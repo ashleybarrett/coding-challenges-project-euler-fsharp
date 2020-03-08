@@ -19,7 +19,7 @@ let solution =
         ) 0 (name.ToCharArray())
         |> (*)(index + 1)
 
-    readFileAndSplit location ","
+    readFileAndSplitAsync location ","
     |> Array.map parseLine
     |> Array.sort
     |> Array.mapi getScoreForName
