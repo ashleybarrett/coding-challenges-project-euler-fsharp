@@ -143,6 +143,13 @@ type TestClass () =
         actual.ShouldBe(expected);
 
     [<Test>]
+    [<Ignore("Slow test")>]
+    member this.VerifySolution23() =
+        let expected = 4179871
+        let actual = Challenge23.solution
+        actual.ShouldBe(expected);
+
+    [<Test>]
     member this.VerifySolution25() =
         let expected = 4782
         let actual = Challenge25.solution
